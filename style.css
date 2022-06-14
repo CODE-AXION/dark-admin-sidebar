@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+body{
+    background-color: #161a29;
+}
+
+.sidebar--wrapper{
+
+    background-color: #08090d;
+    width: 240px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bi{
+    fill: white;
+    transform: scale(1.3);
+}
+
+.profile--dashboard_content{
+    width: 205px;
+    margin: 0 auto;
+    border-left: none;
+    border-right: none;
+    border-block: 1px solid ffffff85;
+    /* margin-top: 10px; */
+    /* border: 1px solid white; */
+}
+
+.profile--image_container{
+    border-radius: 5px;
+}
+
+.profile--photo{
+    height: 40px;
+    border-radius: 5px;
+}
+
+.profile--wrapper{
+    display: flex;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    align-items:center;
+
+    padding-left: 10px;
+}
+
+.horizontal--line-sidebar{
+
+    background-color: #ffffff85;
+    border: none;
+    height: 1px;
+    margin-block: 10px;
+}
+
+.profile--dashboard__item{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.1s all ease;
+    border-radius: 5px;
+    
+}
+
+.profile--dashboard__item:hover{
+    /* background-color: #353047; */
+    background-color: #17173c;
+    cursor: pointer;
+}
+
+.text-white--profile_1{
+    color: #ffffffbd;
+    margin-left: 10px;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.text-white--profile_2{
+    font-weight: 400;
+    color: white;
+    font-family: system-ui;
+    margin-left: 10px;
+}
+
+.text-white{
+    color: #ffffffa1;
+    margin-left: 10px;
+    font-weight: lighter;
+
+}
+
+.add--project--wrapper{
+    border: 2px dotted #ffffff57;
+    margin-top: auto;
+    display: flex;
+    align-items: initial;
+    height: 123px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+
+/* 
+    position: fixed;
+  left: 0;
+  width: 193px;
+    
+    transform: translate(10px, -15px);
+  bottom: 0; */
+  /* width: 100%; */
+}
+
+.add--project_content{
+
+    width: 100%;
+}
+
+.add--button{
+    text-align:center;
+    margin-top: 30px;
+}
+
+.--drag{
+    font-size: 0.8rem;
+}
+
+.--upload{
+    color: white !important;
+    margin-top: 10px;
+}
+
+.bi-plus-circle-fill{
+    fill: rgb(109, 109, 255) !important;
+    transform: scale(2);
+    box-shadow: 0px 0px 7px #4894ff;
+    border-radius: 83px;
+}
+
+.horizontal {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(#01f4e4, #01f4e4, transparent);
+    border-radius: 43%;
+    margin-block: 25px;
+}
+
