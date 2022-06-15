@@ -10,11 +10,27 @@ body{
     background-color: #161a29;
 }
 
+.profile--information{
+    margin-left: 10px;
+}
+
+
+#sidebar_container{
+    width: 80px;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+
+#hamburger{
+    margin-left: 80px;
+    transition: all 0.5s ease;
+}
+
 .sidebar--wrapper{
 
 
    background: linear-gradient(45deg, black, #191b52e3);
-    width: 240px;
+    /* width: 240px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,11 +48,12 @@ body{
 }
 
 .profile--dashboard_content{
-    width: 205px;
-    margin: 0 auto;
+    /* width: 205px; */
+    margin: 20px;
     border-left: none;
     border-right: none;
     border-block: 1px solid ffffff85;
+  
     /* margin-top: 10px; */
     /* border: 1px solid white; */
 }
@@ -53,6 +70,7 @@ body{
 .profile--wrapper{
     display: flex;
     padding-top: 10px;
+    min-width: max-content;
     /* padding-bottom: 10px; */
     align-items:center;
 
@@ -73,7 +91,7 @@ body{
     align-items: center;
     transition: 0.1s all ease;
     border-radius: 5px;
-    
+    min-width: max-content;
 }
 
 .profile--dashboard__item:hover{
@@ -84,7 +102,7 @@ body{
 
 .text-white--profile_1{
     color: #ffffffbd;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: lighter;
     font-size: 0.9rem;
 }
@@ -98,7 +116,7 @@ body{
 
 .text-white{
     color: #ffffffc4;
-    margin-left: 10px;
+    margin-left: 35px;
     font-weight: lighter;
 
 }
@@ -130,16 +148,26 @@ body{
 
 .add--button{
     text-align:center;
-    margin-top: 30px;
+    margin-top: 45px;
+    transition: all 0.5s ease;
 }
 
 .--drag{
     font-size: 0.8rem;
+    display: none;
+
+    color: white !important;
+    transition: all 0.5s ease;
+
 }
 
 .--upload{
-    color: white !important;
+    color: #ffffffc4;
     margin-top: 5px;
+    transition: all 0.5s ease;
+  
+    display: none;
+    font-weight: lighter;
 }
 
 .bi-plus-circle-fill{
@@ -257,6 +285,7 @@ body{
     display: flex;
     padding: 10px;
     align-items: center;
+    min-width: max-content;
 }
 
 /* .bi-caret-down .bi-caret-up{
@@ -268,7 +297,8 @@ body{
 }
 
 .drop--text_level_1{
-    margin-left: 10px;
+    margin-left: 35px;
+
 }
 
 .horizontal--1{
@@ -304,4 +334,11 @@ body{
 .hello{
     margin-left: 5px;
     color: #f4c747;
+}
+
+.bi-list{
+    fill: white;
+    transform: scale(2);
+    cursor: pointer;
+    padding: 30px;
 }

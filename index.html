@@ -9,7 +9,7 @@
 </head>
 <body>
    
-    <div class="sidebar_container">
+    <div id="sidebar_container">
 
         <div class="sidebar--wrapper">
 
@@ -27,7 +27,7 @@
                     <h2 class="text-white--profile_2">CODE AXION</h2>
                 </div>
             </div>
-     
+      
             <div class="profile--dashboard_content">
                 
                 <!-- <hr class="horizontal--line-sidebar"> -->
@@ -146,8 +146,8 @@
                         <div class="add--logo_wrapper">
                             <span class="add--logo">+</span>
                         </div>
-                          <h2 class="text-white   ft-light-ui --upload">Upload new project</h2>
-                          <h4 class="text-white   ft-light-ui --drag">Drag And Drop</h4>
+                          <h2 class="  ft-light-ui --upload">Upload new project</h2>
+                          <h4 class=" ft-light-ui --drag">Drag And Drop</h4>
                     </div>
                 
                 </div>
@@ -162,6 +162,60 @@
 
 
     </div>
+
+<div  id="hamburger"  onclick="openNav()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+</div>
+
+
+
+
+
+<script>
+    function openNav() {
+
+     var x = document.querySelector("#sidebar_container");
+
+     var d = document.querySelector(".--drag");
+     var u = document.querySelector(".--upload");
+
+     var a = document.querySelector(".add--button");
+
+     var y = document.querySelector("#hamburger");
+
+        if (x.style.width === "240px") {
+            x.style.width = "80px";
+            y.style.marginLeft = "80px"
+            d.style.display = "none"
+            u.style.display = "none"
+            a.style.marginTop = "45px"
+           
+        } else {
+            x.style.width = "240px";
+            y.style.marginLeft = "240px"
+            d.style.display = "block"
+            u.style.display = "block"
+            a.style.marginTop = "30px"
+
+
+
+        }
+
+
+
+    console.log(x);
+    }
+    
+    function closeNav() {
+
+    document.getElementById("sidebar_container").style.width = "240px";
+    document.getElementById("hamburger").style.marginLeft= "0";
+    }
+
+
+    </script>
 
 </body>
 </html>
