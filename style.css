@@ -208,7 +208,7 @@ body{
     display: unset;
     transition: all 0.3s ease;
     padding: unset;
-    
+    cursor: pointer;
 }
 
 .dropdown--item_level--1{
@@ -340,5 +340,5 @@ body{
     fill: white;
     transform: scale(2);
     cursor: pointer;
-    margin: 30px;
+    padding: 30px;
 }
