@@ -23,7 +23,7 @@ body{
 }
 
 #hamburger{
-    margin-left: 80px;
+    margin-left: 0px;
     transition: all 0.5s ease;
 }
 
@@ -357,11 +357,17 @@ body{
     color: #f4c747;
 }
 
+#section{
+    margin-left:140px;
+    transition:all 0.5s ease;
+
+}
+
 .bi-list{
     fill: white;
     transform: scale(2);
     cursor: pointer;
-    margin: 30px;
+    margin-block: 30px;
 }
 
 .line-left{
