@@ -12,6 +12,7 @@ body{
 
 .profile--information{
     margin-left: 10px;
+    min-width: max-content;
 }
 
 
@@ -34,7 +35,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
 
 }
 
@@ -45,11 +46,15 @@ body{
 .bi{
     fill: white;
     transform: scale(1.3);
+    min-width: max-content;
 }
 
 .profile--dashboard_content{
     /* width: 205px; */
-    margin: 20px;
+    margin-inline: 20px;
+
+    /* min-width: max-content; */
+    overflow-x: clip;
     border-left: none;
     border-right: none;
     border-block: 1px solid ffffff85;
@@ -70,7 +75,8 @@ body{
 .profile--wrapper{
     display: flex;
     padding-top: 10px;
-    min-width: max-content;
+    overflow-x: clip;
+    /* min-width: max-content; */
     /* padding-bottom: 10px; */
     align-items:center;
 
@@ -90,8 +96,15 @@ body{
     display: flex;
     align-items: center;
     transition: 0.1s all ease;
+    /* border-radius: 5px;
+    min-width: max-content; */
+
+
     border-radius: 5px;
-    min-width: max-content;
+    padding: 10px;
+    /* width: 10px; */
+    min-width: unset;
+
 }
 
 .profile--dashboard__item:hover{
@@ -208,7 +221,9 @@ body{
     display: unset;
     transition: all 0.3s ease;
     padding: unset;
-    cursor: pointer;
+    margin-inline: 20px;
+    /* overflow-x: clip; */
+    
 }
 
 .dropdown--item_level--1{
@@ -219,10 +234,11 @@ body{
     font-family: system-ui;
     font-weight: lighter;
     border-radius: 0px 10px 10px 10px;
+    /* border-radius: 0px 10px 10px 10px;
     margin-block: 0px;
     margin-inline:-1px ;
     
-    border-left: 1px solid white;
+    border-left: 1px solid white; */
     cursor: pointer;
 
 }
@@ -230,7 +246,9 @@ body{
 .border--line{
     border-left: 1px solid white;
     margin-left: 15px;
+    width: 170px;
     border-radius: 0px 10px 10px 10px;
+    background-color: #000f1c94;
 }
 
 /* .border--line:nth-last-child(2){
@@ -285,7 +303,8 @@ body{
     display: flex;
     padding: 10px;
     align-items: center;
-    min-width: max-content;
+    overflow:hidden;
+    /* min-width: max-content; */
 }
 
 /* .bi-caret-down .bi-caret-up{
@@ -308,6 +327,7 @@ body{
 
 .ft-light-ui{
     font-family: system-ui;
+    overflow: hidden;
 }
 
 .notifi--{
@@ -340,5 +360,32 @@ body{
     fill: white;
     transform: scale(2);
     cursor: pointer;
-    padding: 30px;
+    margin: 30px;
+}
+
+.line-left{
+    border-radius: 0px 10px 10px 10px;
+    margin-block: 0px;
+    margin-inline: -1px;
+    border-left: 1px solid white;
+}
+
+
+
+
+.horizontal {
+    animation: pulse 3s infinite;
+    background-color: #3481ff;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.4;
+      }
 }

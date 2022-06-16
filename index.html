@@ -22,7 +22,7 @@
 
                     <div class="intro--wrapper">
                         <h6 class="text-white--profile_1">Hello</h6>
-                        <span class="hello"> 👋</span>
+                        <span class="hello"> </span>
                     </div>
                     <h2 class="text-white--profile_2">CODE AXION</h2>
                 </div>
@@ -65,7 +65,7 @@
                 </div>
 
                 
-
+                </div>
 
                 <div class="dropdown__level--1">
 
@@ -89,10 +89,19 @@
                     <div class="dropdown--level_1">
 
                         <ul class="border--line">
+                            <div class="line-left">
+                                 <li class="dropdown--item_level--1">Orders</li>
+                            </div>
+                            <div class="line-left">
+                                <li class="dropdown--item_level--1">Orders</li>
+                            </div>
+                            <div class="line-left">
+                                <li class="dropdown--item_level--1">Orders</li>
+                        </div>
+                        <div class="line-left">
                             <li class="dropdown--item_level--1">Orders</li>
-                            <li class="dropdown--item_level--1">Products</li>
-                            <li class="dropdown--item_level--1">Invoices</li>
-                            <li class="dropdown--item_level--1">Users</li>
+                            </div>
+
                         </ul>
 
 
@@ -101,6 +110,9 @@
 
 
                 </div>
+
+
+            <div class="profile--dashboard_content">
 
                 <div class="profile--dashboard__item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
@@ -124,10 +136,13 @@
                       </svg>
                     <h2 class="text-white  ft-light-ui ">Saved</h2>
                 </div>
-
+            
                 <!-- <hr class="horizontal--line-sidebar"> -->
-                <div class="horizontal horizontal--1"></div>
-
+            
+            </div>
+            
+            <div class="profile--dashboard_content">
+                    <div class="horizontal horizontal--1"></div>
                 <div class="profile--dashboard__item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
@@ -181,6 +196,7 @@
      var d = document.querySelector(".--drag");
      var u = document.querySelector(".--upload");
 
+     var c = document.querySelector(".border--line");
      var a = document.querySelector(".add--button");
 
      var y = document.querySelector("#hamburger");
@@ -191,6 +207,8 @@
             d.style.display = "none"
             u.style.display = "none"
             a.style.marginTop = "45px"
+            c.style.width = "150px"
+            c.style.background = "#000f1c94"
            
         } else {
             x.style.width = "240px";
@@ -198,6 +216,8 @@
             d.style.display = "block"
             u.style.display = "block"
             a.style.marginTop = "30px"
+            c.style.width = "170px"
+            c.style.background = "transparent"
 
 
 
