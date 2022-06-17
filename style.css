@@ -430,6 +430,33 @@ body{
     font-family: system-ui;
     font-weight: 400;
     font-size: 1rem; 
+
+}
+
+.admin_search_wrapper{
+    background-color: #181930;
+    border-radius: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    display: flex;
+    align-items: center;
+    
+}
+
+.admin_search{
+    outline: none;
+    border: none;
+
+    width: 190px;
+    padding: 10px;
+    padding-left: 15px;
+    
+    background-color: transparent;
+    color: white;
+
+}
+
+.bi-search{
+    margin-right: 10px;
 }
 
 .admin__dashboard_text{
