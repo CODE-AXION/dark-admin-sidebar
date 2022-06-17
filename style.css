@@ -374,7 +374,7 @@ body{
     fill: white;
     transform: scale(2) !important;
     cursor: pointer;
-    margin-block: 20px;
+    margin-block: 10px;
 }
 
 .line-left{
@@ -419,7 +419,35 @@ body{
 /* rgb(18,25,31)
 
 26 34 46 */
+.breadcrumbs__title_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.admin_date{
+    color: white;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 1rem; 
+}
+
+.admin__dashboard_text{
+    color: white;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-block: 20px;
+}
+
+.breadcrumbs{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 30px;
+
+}
 
 
 .analytics--card{
@@ -444,6 +472,8 @@ body{
     height: 100%;
 
 }
+
+
 
 .left--logo_text{
     font-size: 1.2rem;
