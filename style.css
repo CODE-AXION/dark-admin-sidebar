@@ -367,9 +367,9 @@ body{
 
 .bi-list{
     fill: white;
-    transform: scale(2);
+    transform: scale(2) !important;
     cursor: pointer;
-    margin-block: 30px;
+    margin-block: 20px;
 }
 
 .line-left{
@@ -584,3 +584,57 @@ body{
     font-size: 1.6rem;
     font-weight: 400;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center--content_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+
+.right--side_card_content_container{
+    width: 30%;
+    margin-top: 20px;
+
+}
+
+.right--side_card--top_products{
+    height: 325px;
+    border-radius: 10px;
+    background-color:rgb(33,42,56);
+
+}
+
+.color--white{
+    color: white;
+}
+
+.sales-overview-text{
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 20px;
+}
