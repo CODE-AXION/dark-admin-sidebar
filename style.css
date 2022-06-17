@@ -6,10 +6,10 @@
     text-decoration: none;
 }
 
-body{
+/* body{ */
     /* background-color: #161a29; */
     /* background: rgb(18,25,31); */
-}
+/* } */
 
 .main--grid{
     background: linear-gradient(45deg, black, #191b52e3);
@@ -611,6 +611,15 @@ body{
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+  }
+
+  .status{
+    border: 2px solid rgba(45, 255, 150, 0.5);
+    padding-inline: 10px;
+    padding-block: 5px;
+
+    border-radius: 5px;
+
   }
   
   .wishlist_row_text, .wishlist_header {

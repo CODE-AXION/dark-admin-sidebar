@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- <script>alert('hi i am Code Axion , This Dashboard is not Responsive so kindly " DONT USE IT ON MOBILE PLEASE"  so...enjoy the IN-DEV Dashboard ')</script> -->
+
     <div class="main--grid">
         <div id="sidebar_container">
 
@@ -301,28 +304,41 @@
                           
                           <th class="wishlist_header" >Product Name</th>
                           <th class="wishlist_header">Price</th>
-                          <th class="wishlist_header">Stock Status</th>
+                          <th class="wishlist_header" >Stock Status</th>
                          
                         </tr>
                         <tr class="wishlist_row">
                             
                           <td class="wishlist_row_text">Sony Headphones White Edition</td>
                           <td class="wishlist_row_text">$499</td>
-                          <td class="wishlist_row_text">In Stock</td>
+                          <td class="wishlist_row_text" >
+                            <span class="status">
+                                In Stock
+                            </span>
+                        
+                        </td>
                           
                         </tr>
                         <tr class="wishlist_row">
                             
                           <td class="wishlist_row_text">Sony PS5 Controllre GT Edition </td>
                           <td class="wishlist_row_text">$199</td>
-                          <td class="wishlist_row_text">In Stock</td>
+                          <td class="wishlist_row_text" >
+                            <span class="status">
+                                In Stock
+                            </span>
+                        </td>
                           
                         </tr>
                         <tr class="wishlist_row">
                             
                           <td class="wishlist_row_text">Beats Headphones red color  </td>
                           <td class="wishlist_row_text">$99</td>
-                          <td class="wishlist_row_text">In Stock</td>
+                          <td class="wishlist_row_text">
+                        <span class="status">
+                            In Stock
+                        </span>
+                        </td>
                           
                         </tr>
                       
@@ -484,7 +500,7 @@ var options = {
               name: {
                 fontSize: '20px',
                 color: undefined,
-                offsetY: 10
+                offsetY: 5,
               },
               value: {
                 offsetY: 26,
