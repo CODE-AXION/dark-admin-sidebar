@@ -7,8 +7,13 @@
 }
 
 body{
-    background-color: #161a29;
+    /* background-color: #161a29; */
     /* background: rgb(18,25,31); */
+}
+
+.main--grid{
+    background: linear-gradient(45deg, black, #191b52e3);
+    height: 100vh;
 }
 
 .profile--information{
@@ -426,7 +431,8 @@ body{
     align-items: center;
     height: 100px;
     overflow: hidden;
-    background-color:rgb(33,42,56);
+    /* background-color:rgb(33,42,56); */
+    background: #181930;
     border-radius: 5px;
     gap: 10px;
  
@@ -543,7 +549,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 70%;
-    background-color:rgb(33,42,56);
+    /* background-color:rgb(33,42,56); */
+    background: #181930;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
@@ -624,7 +631,8 @@ body{
 .right--side_card--top_products{
     height: 325px;
     border-radius: 10px;
-    background-color:rgb(33,42,56);
+    /* background-color:rgb(33,42,56); */
+    background: #181930;
 
 }
 
