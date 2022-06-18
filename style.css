@@ -755,6 +755,8 @@
   background: #181930;
   margin-bottom:10px ;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   padding: 10px;
 }
 
@@ -848,4 +850,8 @@ linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, rgb(224, 225, 226) 49.52%, rgb
     width: 170px;
     height: 100px;
     overflow: hidden;
+}
+
+.top__product:hover{
+    transform: scale(1.1);
 }
