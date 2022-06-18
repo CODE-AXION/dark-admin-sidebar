@@ -13,7 +13,7 @@
 
 .main--grid{
     background: linear-gradient(45deg, black, #191b52e3);
-    height: 100vh;
+    height: 100%;
 }
 
 .profile--information{
@@ -605,7 +605,7 @@
 .wishlist_table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 70%;
+    width: 67%;
     /* background-color:rgb(33,42,56); */
     background: #181930;
     border-radius: 10px;
@@ -711,4 +711,19 @@
     font-size: 1.3rem;
     text-align: center;
     padding-top: 20px;
+}
+
+
+
+
+
+
+
+.graph--center {
+    background: #181930;
+    margin-top: 20px;
+    height: 300px;
+    width: 65%;
+    border-radius: 10px;
+    padding: 10px;
 }

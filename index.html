@@ -299,51 +299,13 @@
 
                 <div class="center--content_wrapper">
 
-                    <table class="wishlist_table">
-                        <tr class="wishlist_header_wrapper">
-                          
-                          <th class="wishlist_header" >Product Name</th>
-                          <th class="wishlist_header">Price</th>
-                          <th class="wishlist_header" >Stock Status</th>
-                         
-                        </tr>
-                        <tr class="wishlist_row">
-                            
-                          <td class="wishlist_row_text">Sony Headphones White Edition</td>
-                          <td class="wishlist_row_text">$499</td>
-                          <td class="wishlist_row_text" >
-                            <span class="status">
-                                In Stock
-                            </span>
-                        
-                        </td>
-                          
-                        </tr>
-                        <tr class="wishlist_row">
-                            
-                          <td class="wishlist_row_text">Sony PS5 Controllre GT Edition </td>
-                          <td class="wishlist_row_text">$199</td>
-                          <td class="wishlist_row_text" >
-                            <span class="status">
-                                In Stock
-                            </span>
-                        </td>
-                          
-                        </tr>
-                        <tr class="wishlist_row">
-                            
-                          <td class="wishlist_row_text">Beats Headphones red color  </td>
-                          <td class="wishlist_row_text">$99</td>
-                          <td class="wishlist_row_text">
-                        <span class="status">
-                            In Stock
-                        </span>
-                        </td>
-                          
-                        </tr>
-                      
-                       
-                      </table>
+                    <div class="graph--center">
+                        <div id="chartss">
+
+                        </div>
+                    </div>
+
+                   
                     
                       <div class="right--side_card_content_container">
 
@@ -362,6 +324,52 @@
                       </div>
 
                 </div>
+
+                <table class="wishlist_table">
+                    <tr class="wishlist_header_wrapper">
+                      
+                      <th class="wishlist_header" >Product Name</th>
+                      <th class="wishlist_header">Price</th>
+                      <th class="wishlist_header" >Stock Status</th>
+                     
+                    </tr>
+                    <tr class="wishlist_row">
+                        
+                      <td class="wishlist_row_text">Sony Headphones White Edition</td>
+                      <td class="wishlist_row_text">$499</td>
+                      <td class="wishlist_row_text" >
+                        <span class="status">
+                            In Stock
+                        </span>
+                    
+                    </td>
+                      
+                    </tr>
+                    <tr class="wishlist_row">
+                        
+                      <td class="wishlist_row_text">Sony PS5 Controllre GT Edition </td>
+                      <td class="wishlist_row_text">$199</td>
+                      <td class="wishlist_row_text" >
+                        <span class="status">
+                            In Stock
+                        </span>
+                    </td>
+                      
+                    </tr>
+                    <tr class="wishlist_row">
+                        
+                      <td class="wishlist_row_text">Beats Headphones red color  </td>
+                      <td class="wishlist_row_text">$99</td>
+                      <td class="wishlist_row_text">
+                    <span class="status">
+                        In Stock
+                    </span>
+                    </td>
+                      
+                    </tr>
+                  
+                   
+                  </table>
 
 
             </div>
@@ -429,7 +437,72 @@
 
 <script>
 
+  var options2 = {
+          series: [{
+            name: "Desktops",
+            data: [10, 100, 15, 81, 89, 42, 19, 91, 108]
+        }],
+          chart: {
+          height: 300,
+          type: 'area',
+          zoom: {
+            enabled: false
+          },
 
+   
+          dropShadow: {
+            enabled: true,
+        top: 0,
+        left: 0,
+        blur: 8,
+        opacity: 0.3,
+        color: '#3d49f1',
+     
+    }
+
+
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        title: {
+          text: 'Product Trends by Month',
+          align: 'left',
+        
+        },
+        grid: {
+          row: {
+            colors: 'transparent', // takes an array which will be repeated on columns
+            opacity: 0,
+          },
+        },
+        colors: ["#3d49f1"],
+        fill: {
+            type: "gradient",
+            gradient: {
+                shadeIntensity: 1,
+            opacityFrom: 0.5,
+            opacityTo: 0,
+            stops: [0, 80, 100]
+
+            }
+        },
+        markers: {
+            size: 5,
+            colors: ["#000524"],
+            strokeColor: "#00BAEC",
+            strokeWidth: 3
+        },
+        xaxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartss"), options2);
+        chart.render();
 
 // var options = {
 //   chart: {
