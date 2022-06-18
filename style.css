@@ -727,3 +727,64 @@
     border-radius: 10px;
     padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+.top--products{
+    width: 30%;
+   
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.note{
+    transform: scale(1.6);
+}
+
+.top__product{
+  background: #181930;
+  margin-bottom:10px ;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.top--products--text_wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.-sm{
+    font-size: .8rem;
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+.last--content_center{
+    display: flex;
+    
+}
+
+
+/* 
+linear-gradient(90deg, rgba(224, 225, 226, 0) 0%, rgb(224, 225, 226) 49.52%, rgba(224, 225, 226, 0) 100%) */
