@@ -246,6 +246,7 @@
     margin-inline:-1px ;
     
     border-left: 1px solid white; */
+    transition: all 0.1s ease;
     cursor: pointer;
 
 }
